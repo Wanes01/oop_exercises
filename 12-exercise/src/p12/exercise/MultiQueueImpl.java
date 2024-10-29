@@ -4,7 +4,7 @@ import java.util.*;
 
 public class MultiQueueImpl<T, Q> implements MultiQueue<T, Q> {
 
-    Map<Q, Queue<T>> openQueues = new HashMap<>();
+    private final Map<Q, Queue<T>> openQueues = new HashMap<>();
 
     @Override
     public Set<Q> availableQueues() {
